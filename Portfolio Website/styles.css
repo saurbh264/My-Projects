@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: 'Be Vietnam Pro', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 
@@ -116,8 +117,9 @@ a:hover{
     color: red;
 }
 
-#fsd{
+.role{
     color: #4C41B5;
+    transition: all 1s;
 }
 .hero-right{
     position: relative;
@@ -333,18 +335,22 @@ a:hover{
 .card1{
     background-image: url(./images/projects/Project1.png);
     background-size: cover;
+    transform: translateX(-2rem);
 }
 .card2{
     background-image: url(./images/projects/Project2.png);
     background-size: cover;
+    transform: translateX(4rem);
 }
 .card3{
     background-image: url(./images/projects/Project3.png);
     background-size: cover;
+    transform: translateX(-2rem);
 }
 .card4{
     background-image: url(./images/projects/Project4.png);
     background-size: cover;
+    transform: translateX(4rem);
 }
 .btn-rm{
     width: 40%;
@@ -356,4 +362,56 @@ a:hover{
     transition: all 0.4s;
     color: red;
     cursor: pointer;
+}
+.skills-section{
+    margin: 2rem 0rem 0rem 0rem;
+    width: 100vw;
+    display: flex;
+}
+.skills-left-section{
+    width: 50%;
+    padding: 1rem 2rem ;
+}
+.skills-right-section{
+    position: relative;
+    padding-top: 5%;
+    width: 60%;
+    gap: 10px;
+}
+.skills-stack{
+    height: 90px;
+    width: 90px;
+    margin: 1rem;
+    transition: all 0.5s;
+}
+.skills-stack:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.skills-heading{
+    margin: 1rem;
+    color: red;
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+}
+#me{
+    font-size: 1.5em;
+}
+.para{
+    font-size: 1rem;
+    margin: 0.6em;
+    font-weight: 800;
+}
+.bubble{
+    position: absolute;
+    z-index: -1;
+    top: 10rem;
+    left: 5rem;
+    animation: bubble 5s linear infinite;
+}
+@keyframes bubble {
+    50%{
+        top: 8rem;
+        left: 8rem;
+    }
 }
