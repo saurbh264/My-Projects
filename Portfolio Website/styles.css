@@ -6,6 +6,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Be Vietnam Pro', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -23,8 +24,8 @@
 }
 .left img{
     width: 10%;
-    padding:-10px;
-    transform: translateX(25%);
+    padding:-5px;
+    transform: translateX(15%);
     z-index: -1;
 }
 .nav{
@@ -80,21 +81,23 @@ a:hover{
     margin-bottom: 2rem;
 }
 .btn-pink{
-    width: 20%;
-    margin-left: 10rem ;
     padding: 0.5rem 0rem 0.5rem 0rem;
     position: relative;
     background-color: red;
-    border: 1px solid #1f1f1f;
+    border: 1px solid red;
     color: snow;
     font-size: 1rem;
     z-index: 1;
     cursor: pointer;
     box-shadow: 0px 0px 1px #1f1f1f ;
 }
+#hire-me{
+    width: 20%;
+    margin-left: 10rem ;
+}
 .btn-pink::before{
     content:"";
-    background-color: #1f1f1f;
+    background-color: snow;
     position: absolute;
     top: 0%;
     bottom: 0%;
@@ -107,7 +110,10 @@ a:hover{
 }
 .btn-pink:hover::before{
     transform: scaleX(1);
-    box-shadow: 0px 0px 5px #1f1f1f ;
+    box-shadow: 0px 0px 5px red ;
+}
+.btn-pink:hover{
+    color: red;
 }
 
 #fsd{
@@ -224,16 +230,130 @@ a:hover{
     margin-top: -2rem;
     background-color: #E1E1E1;
 }
-.project-heading{
+.project-mainheading{
     text-align: center;
     padding: 1.5rem;
     font-size: 4rem;
     color: #E04041;
 }
 .cards{
-    max-width: 1rem;
     margin: 0 auto;
     padding: 3rem 0;
     display: flex;
     flex-direction: column;
+    gap: 5rem;
+    
+}
+.project-card{
+    position: relative;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 500px;
+    box-shadow: 0px 0px 40px #1f1f1f;
+}
+.project-card::after{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1f1f1f9a;
+    transform: scaleX(1);
+    z-index: 0;
+}
+.project-card::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #343d68,#343d68be,#343d687c);
+    transform: scaleX(0);
+    transition: 0.4s;
+    transform-origin: left;
+    z-index: 1;
+}
+.project-card:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.project-card:hover{
+    .card-number{
+        opacity: 1;
+    }
+    .project-content{
+        transform: scale(1.1);
+    }
+}
+.ts-icons{
+    height: 30px;
+    width: 30px;
+}
+.card-number{
+    position: absolute;
+    font-size:150px;
+    color: white;
+    z-index: 3;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.left-card{
+    left: -30px;
+    top:-60px;
+}
+.right-card{
+    right: -30px;
+    top:-60px;
+}
+.project-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2em;
+    bottom:20%;
+    z-index:5;
+    gap: 1em;
+    transition: all 0.4s
+}
+
+.project-content-left{
+    left:10%;
+}
+.project-content-right{
+    right:10%;
+}
+
+.card1{
+    background-image: url(./images/projects/Project1.png);
+    background-size: cover;
+}
+.card2{
+    background-image: url(./images/projects/Project2.png);
+    background-size: cover;
+}
+.card3{
+    background-image: url(./images/projects/Project3.png);
+    background-size: cover;
+}
+.card4{
+    background-image: url(./images/projects/Project4.png);
+    background-size: cover;
+}
+.btn-rm{
+    width: 40%;
+}
+.btn-rm1{
+    width: 25%;
+}
+.giti:hover,.linki:hover{
+    transition: all 0.4s;
+    color: red;
+    cursor: pointer;
 }

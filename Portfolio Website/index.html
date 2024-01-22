@@ -12,9 +12,9 @@
 <body>
     <div class="wrapper">
         <div class="navbar">
-            <div class="left"><img src="images/userAsset/NavLogo.jpg" alt="Logo"><p id="left-text">ohn Doe</p></div>
+            <div class="left"><img src="images/userAsset/slogo.webp" alt="Logo"><p id="left-text">aurabh</p></div>
             <div class="nav">
-                <a href="#projects" class="text-nav">Projects</a>
+                <a href="#project-container" class="text-nav">Projects</a>
                 <a href="#skills" class="text-nav">Skills</a>
                 <a href="#contact-me" class="text-nav">Contact Me</a>
             </div>
@@ -27,7 +27,7 @@
                 <div id="hero-prof" class="hero-left-items">I am a <span id="fsd">Full Stack Developer</span></div>
                 <div id="hero-description" class="hero-left-items">I'm a Software developer and here is my portfolio website. Here <br>
                 you'll learn about my journey as a Software Developer.</div>
-                <button class="btn-pink">Hire Me</button>
+                <button class="btn-pink" id="hire-me">Hire Me</button>
                 <div class="faded-text">Saurabh</div>
             </div>
             <div class="hero-right">
@@ -40,13 +40,14 @@
             </div>
         </div>
         
-        <div class="project-container">
-            <h1 class="project-heading">Projects</h1>
+        <div class="project-container" id="project-container">
+            <h1 class="project-mainheading">Projects</h1>
 
             <div class="cards">
 
-            <div class="card1">
-                <div class="card-number" id="project1">01</div>
+            <div class="project-card card1">
+                <div class="card-number right-card" id="project1">01</div>
+                <div class="project-content project-content-left">
                 <div class="icons-container">
                     <img src="images/stack/HTML.png" alt="" class="ts-icons">
                     <img src="images/stack/CSS.png" alt="" class="ts-icons">
@@ -60,15 +61,17 @@
                     <img src="images/stack/Vercel.svg" alt="" class="ts-icons">
                 </div>
                 <h2 class="project-heading">Tint & Orange</h2>
-                <div class="project-subheading">This is a car modification company which provide your sheets to protect your car from scratch.</div>
-                <button class="btn-pink">Read More</button>
+                <div class="project-subheading">This is a car modification company which provide your sheets to <br>protect your car from scratch.</div>
                 <div class="more-icons">
-                    <i class="ri-github-fill more-icons"></i>
-                    <i class="ri-links-fill more-icons"></i>
-                </div>
-
-            <div class="card2">
-                    <div class="card-number" id="project2">02</div>
+                    <button class="btn-pink btn-rm1">Read More</button>
+                        <i class="ri-github-fill more-icons ri-xl giti"></i>
+                        <i class="ri-links-fill more-icons ri-xl linki"></i>
+                    </div>
+            </div>
+            </div>
+            <div class="project-card card2">
+                    <div class="card-number left-card" id="project2">02</div>
+                    <div class="project-content project-content-right">
                     <div class="icons-container">
                         <img src="images/stack/HTML.png" alt="" class="ts-icons">
                         <img src="images/stack/CSS.png" alt="" class="ts-icons">
@@ -83,13 +86,16 @@
                     </div>
                     <h2 class="project-heading">Breaking Copyrights</h2>
                     <div class="project-subheading">A platform to download copyrights free <br> youtube music.</div>
-                    <button class="btn-pink">Read More</button>
                     <div class="more-icons">
-                        <i class="ri-github-fill more-icons"></i>
-                        <i class="ri-links-fill more-icons"></i>
-                    </div>
-            <div class="card3">
-                        <div class="card-number" id="project3">03</div>
+                        <button class="btn-pink btn-rm">Read More</button>
+                            <i class="ri-github-fill more-icons ri-xl giti" ></i>
+                            <i class="ri-links-fill more-icons ri-xl linki"></i>
+                        </div>
+                </div>
+            </div>
+            <div class="project-card card3">
+                        <div class="card-number right-card" id="project3">03</div>
+                        <div class="project-content project-content-left">
                         <div class="icons-container">
                             <img src="images/stack/HTML.png" alt="" class="ts-icons">
                             <img src="images/stack/CSS.png" alt="" class="ts-icons">
@@ -104,13 +110,16 @@
                         </div>
                         <h2 class="project-heading">Isha Tattva</h2>
                         <div class="project-subheading">A Website for interior designer to showcase <br> her works and samples.</div>
-                        <button class="btn-pink">Read More</button>
                         <div class="more-icons">
-                            <i class="ri-github-fill more-icons"></i>
-                            <i class="ri-links-fill more-icons"></i>
-                        </div>
-            <div class="card4">
-                            <div class="card-number" id="project4">04</div>
+                            <button class="btn-pink btn-rm">Read More</button>
+                                <i class="ri-github-fill more-icons ri-xl giti"></i>
+                                <i class="ri-links-fill more-icons ri-xl linki"></i>
+                            </div>
+                    </div>
+                </div>
+            <div class="project-card card4 ">
+                            <div class="card-number left-card" id="project4">04</div>
+                            <div class="project-content project-content-right">
                             <div class="icons-container">
                                 <img src="images/stack/HTML.png" alt="" class="ts-icons">
                                 <img src="images/stack/CSS.png" alt="" class="ts-icons">
@@ -124,14 +133,16 @@
                                 <img src="images/stack/Vercel.svg" alt="" class="ts-icons">
                             </div>
                             <h2 class="project-heading">Granit</h2>
-                            <div class="project-subheading">A architectural website to plan your building or <br> home (Hebrew Language).</div>
-                            <button class="btn-pink">Read More</button>
+                            <div class="project-subheading">A architectural website to plan your building <br>or home (Hebrew Language).</div>
                             <div class="more-icons">
-                                <i class="ri-github-fill more-icons"></i>
-                                <i class="ri-links-fill more-icons"></i>
+                                
+                                <button class="btn-pink btn-rm">Read More</button>
+                                <i class="ri-github-fill more-icons ri-xl giti"></i>
+                                <i class="ri-links-fill more-icons ri-xl linki"></i>
                             </div>
-            </div>
-            </div>
+                        </div>
+                </div>
+            </div> 
         </div>
         
         
