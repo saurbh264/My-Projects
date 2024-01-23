@@ -230,7 +230,7 @@ a:hover{
 }
 .project-container{
     margin-top: -2rem;
-    background-color: #E1E1E1;
+    background-color: c;
 }
 .project-mainheading{
     text-align: center;
@@ -255,6 +255,7 @@ a:hover{
     width: 70%;
     height: 500px;
     box-shadow: 0px 0px 40px #1f1f1f;
+    overflow: visible;
 }
 .project-card::after{
     content: '';
@@ -285,11 +286,11 @@ a:hover{
     transform-origin: left;
 }
 .project-card:hover{
-    .card-number{
-        opacity: 1;
-    }
     .project-content{
         transform: scale(1.1);
+    }
+    .card-number{
+        opacity: 1;
     }
 }
 .ts-icons{
@@ -300,7 +301,7 @@ a:hover{
     position: absolute;
     font-size:150px;
     color: white;
-    z-index: 3;
+    z-index: 5;
     opacity: 0;
     transition: all 0.5s;
 }
@@ -414,4 +415,46 @@ a:hover{
         top: 8rem;
         left: 8rem;
     }
+}
+.text-skills{
+    text-align: end;
+    font-size: 13rem;
+}
+.contact-me{
+    background-color: #E1E1E1;
+    margin-top: -3.5rem;
+}
+.cm-heading{
+    color: #E04041;
+    padding: 0.2em;
+    font-size: 7rem;
+}
+.cm-subheading{
+        color: #707692;
+        padding-left: 0.5em;
+        font-size: 3rem;
+}
+.form-element{
+    width: 70%;
+    padding: 0.5em 0.8em;
+    margin: 2rem 0rem 0rem 10rem;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px #333;
+    }
+
+textarea{
+    width: 70%;
+    height: 7rem;
+    resize: none;
+    margin: 2rem 0rem 0rem 10rem;
+    font-size: 1em;
+    padding: 0.5em 0.8em;
+    box-shadow: 0px 0px 7px #333;
+}
+.send-msg{
+    width: 25%;
+    margin: 2rem 0rem 4rem 10rem;
+    font-weight: bold;
+    padding: 0.5em 0.8em;
 }
