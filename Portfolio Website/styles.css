@@ -476,6 +476,7 @@ footer{
     color: snow;
     margin-top: 2rem;
     text-decoration: none;
+    transition: all 0.4s;
 }
 .footer-navigation{
     display: flex;
@@ -498,6 +499,7 @@ footer{
 .social{
     text-decoration: none;
     color: snow;
+    transition: all 0.4s;
 }
 .social:hover{
     transform: scale(1.1);
