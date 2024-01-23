@@ -44,7 +44,7 @@
     font-size: 1.2rem;
     transition: 0.2s;
 }
-a:hover{
+.text-nav:hover{
     transform: scale(1.1);
     font-weight: 500;
 }
@@ -457,4 +457,50 @@ textarea{
     margin: 2rem 0rem 4rem 10rem;
     font-weight: bold;
     padding: 0.5em 0.8em;
+}
+.foot-icons{
+    color: red;
+}
+footer{
+    background-color: #343D68;
+}
+.footer-text{
+    color: #535C86;
+}
+.foot-nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.text-foot,.foot-icons{
+    color: snow;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+.footer-navigation{
+    display: flex;
+    gap: 5rem;
+    font-size: 1.4em;
+    margin-left: 4em;
+    padding: 1rem;
+}
+.text-foot:hover{
+    transform: scale(1.1);
+}
+.foot-icons{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.4em;
+    margin-right: 4em;
+    padding: 1rem;
+    text-decoration: none;
+}
+.social{
+    text-decoration: none;
+    color: snow;
+}
+.social:hover{
+    transform: scale(1.1);
+    color:red;
+    cursor: pointer;
 }
