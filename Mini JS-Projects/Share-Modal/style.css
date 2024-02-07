@@ -142,7 +142,8 @@
     position: absolute;
     z-index:100;
     backdrop-filter: blur(4px);
-    visibility: hidden;
+    scale: 0;
+    transition: all 0.2s;
 }
 
 .header{
@@ -224,4 +225,5 @@
     border: 1px solid white;
     position: absolute;
     visibility: hidden;
+    transition: all 0.2s;
 }
