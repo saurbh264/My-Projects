@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(81, 11, 113);
+  background: linear-gradient(
+    45deg,
+    rgba(81, 11, 113, 1) 0%,
+    rgba(64, 21, 94, 1) 30%,
+    rgba(34, 14, 53, 1) 100%
+  );
+}
+.configuration-box{
+    border: 0.1rem solid rgb(255,255, 255,0.2);
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.heading-1 {
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 1px;
+  margin-left: 0.5rem;
+}
+
+.copy-box {
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  gap: 4rem;
+  border-radius: 0.3rem;
+  width: 80%;
+  background-color: #150725;
+  box-shadow: 0rem 0.2rem #4b0a66;
+}
+.password-text {
+  background-color: inherit;
+  border: none;
+  color: gold;
+}
+::placeholder {
+  color: gold;
+  font-size: 1rem;
+}
+.copy-icon-svg {
+  width: 70%;
+  cursor: pointer;
+}
+.configuration-box {
+  background-color: #150725;
+  width: 80%;
+  padding: 1.2rem 1rem;
+  height: 90%;
+  border-radius: 0.5rem;
+}
+
+.length-box {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  /* width: 80%; */
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+.password-length {
+  color: gold;
+}
+
+.slider {
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.5rem;
+}
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Removes default focus */
+  input[type="range"]:focus {
+    outline: none;
+  }
+  
+  /******** Chrome, Safari, Opera and Edge Chromium styles ********/
+  /* slider track */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #16417e;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -8px; /* Centers thumb on the track */
+    background-color: #ebc22d;
+    border-radius: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  
+  /*********** Firefox styles ***********/
+  /* slider track */
+  input[type="range"]::-moz-range-track {
+    background-color: #16417e;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-moz-range-thumb {
+    background-color: #ebc22d;
+    border: none; /*Removes extra border that FF applies*/
+    border-radius: 1rem;
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+  
+  input[type="range"]:focus::-moz-range-thumb{
+    outline: 3px solid #ebc22d;
+    outline-offset: 0.125rem;
+  }
+
+.checkboxes {
+  margin-top: 1rem;
+  color: white;
+}
+
+.labels {
+  margin-left: 0.5rem;
+}
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: start;
+  gap: 0.4rem;
+}
+.cbox {
+  outline: 1px solid rgb(22, 65, 126);
+}
+.strength-box {
+  margin: 0.5rem 0rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.strength-circle {
+  height: 1rem;
+  width: 1rem;
+  background-color: red;
+  box-shadow: 0px 0px 8px red;
+  border-radius: 50%;
+}
+.generate-box {
+  margin-top: 1rem;
+  /* margin-left: 1rem; */
+}
+.generate-btn {
+  padding: 0.5rem 0.8rem;
+  width: 100%;
+  box-shadow: 0rem 0.2rem 0rem 0rem gold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: gold;
+  background-color: #bc14f3;
+}

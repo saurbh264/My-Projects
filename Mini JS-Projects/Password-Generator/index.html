@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="container">
+
+            <div class="content-container">
+                <div class="heading-1">PASSWORD GENERATOR</div>
+                <div class="copy-box">
+                    <div class="copy-text">
+                        <input readonly placeholder="PASSWORD" class="password-text" disabled>
+                    </div>
+                    <div class="copy-icon">
+                        <img src="images/copy.svg" class="copy-icon-svg">
+                    </div>
+                </div>
+                <div class="configuration-box">
+                    <div class="length-box">
+                        <div class="length-text">Password Length</div>
+                        <div class="password-length">1</div>
+                    </div>
+                    <div class="swipe">
+                        <input type="range" min="1" max="20" value="2" step="1" class="slider" id="myRange">
+                    </div>
+                    <div class="checkboxes">
+                        <label class="main">Include Uppercase Letters
+                            <input type="checkbox" id="uppercase" name="uppercase" value="upper" class="cbox">
+                            <span class="geekmark"></span>
+                        </label>
+                        <label class="main">Include Lowercase Letters
+                            <input type="checkbox" id="lowercase" name="lowercase" value="lower" class="cbox">
+                            <span class="geekmark"></span>
+                        </label>
+                        <label class="main">Include Numbers
+                            <input type="checkbox" id="numbers" name="numbers" value="numbers" class="cbox">
+                            <span class="geekmark"></span>
+                        </label>
+                        <label class="main">Include Symbols
+                            <input type="checkbox" id="symbols" name="symbols" value="Symbols" class="cbox">
+                            <span class="geekmark"></span>
+                        </label>
+                    </div>
+                    <div class="strength-box">
+                        <div class="strength-text">Strength</div>
+                        <div class="strength-circle"></div>
+                    </div>
+                    <div class="generate-box">
+                        <button class="generate-btn">GENERATE PASSWORD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
