@@ -16,25 +16,27 @@
 
             <div class="content-container">
                 <div class="heading-1">PASSWORD GENERATOR</div>
+                <div class="mega-box">
                 <div class="copy-box">
                     <div class="copy-text">
-                        <input readonly placeholder="PASSWORD" class="password-text" disabled>
+                        <div class="password-text"> PASSWORD</div>
                     </div>
                     <div class="copy-icon">
+                        <div class="copied">Copied!</div>
                         <img src="images/copy.svg" class="copy-icon-svg">
                     </div>
                 </div>
                 <div class="configuration-box">
                     <div class="length-box">
                         <div class="length-text">Password Length</div>
-                        <div class="password-length">1</div>
+                        <div class="password-length">10</div>
                     </div>
                     <div class="swipe">
-                        <input type="range" min="1" max="20" value="2" step="1" class="slider" id="myRange">
+                        <input type="range" min="1" max="20" value="10" step="1" class="slider" id="myRange">
                     </div>
                     <div class="checkboxes">
                         <label class="main">Include Uppercase Letters
-                            <input type="checkbox" id="uppercase" name="uppercase" value="upper" class="cbox">
+                            <input type="checkbox" id="uppercase" name="uppercase" value="upper" class="cbox" checked>
                             <span class="geekmark"></span>
                         </label>
                         <label class="main">Include Lowercase Letters
@@ -58,6 +60,7 @@
                         <button class="generate-btn">GENERATE PASSWORD</button>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </div>
