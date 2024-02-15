@@ -14,11 +14,11 @@
     <div class="wrapper">
         <div class="container flex flex-col items-center h-[100vh] gap-[2rem] text-white relative">
             <div class="font-bold text-3xl pt-[1rem]">WEATHER APP</div>
-            <div class="flex gap-[5rem] text-xl cursor-pointer transition-all duration-200">
-                <div class="tabs rounded-md p-2">Your Weather</div>
-                <div class="tabs rounded-md p-2">Search Weather</div>
+            <div class="flex gap-[5rem] text-xl cursor-po inter transition-all duration-200">
+                <div class="tabs rounded-md p-2 selected" id="yourweather">Your Weather</div>
+                <div class="tabs rounded-md p-2" id="searchweather">Search Weather</div>
                 <div class=" absolute top-[10rem] left-[30rem] w-[25%]">
-                    <form class="flex items-center max-w-sm mx-auto">
+                    <form class="flex items-center max-w-sm mx-auto notactive form">
                         <label for="simple-search" class="sr-only">Search</label>
                         <div class="relative w-full">
                             <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -43,13 +43,13 @@
                     <div class="w-[80%] text-center">Error 404! Not Found</div>
                 </div>
             </div>
-            <div class="variable flex flex-col items-center notactive">
+            <div class="variable flex flex-col items-center ">
                 <div class="city-name text-2xl">Mandi</div>
                 <div class="weather text-xl">Cloudy</div>
                 <div class="image  w-[70%]"><img src="assets/cloud.png" alt="" class="w-[80%] mx-auto"></div>
                 <div class="'temperature text-2xl font-bold">23.08 °C</div>
             </div>
-            <div class="flex  mt-5 w-[50vw] h-[25vh] gap-[10%] text-white notactive">
+            <div class="flex  mt-5 w-[50vw] h-[25vh] gap-[10%] text-white variable">
                 <div class="windspeed-card cards w-[30%] rounded-sm pt-2">
                     <div class="w-[60%]"><img src="assets/wind.png" class="w-[70%] mx-auto"></div>
                     <div class="text-xl">WINDSPEED</div>
@@ -69,6 +69,8 @@
 
         </div>
     </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
