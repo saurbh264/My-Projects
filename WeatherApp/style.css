@@ -26,12 +26,29 @@ background: linear-gradient(140deg, rgba(20,47,79,1) 0%, rgba(41,79,130,1) 60%, 
     background: rgba(255,255,255,0.2);
 
 }
-.notactive{
+
+.active{
+    opacity: 1;
+    transform: scale(1);
+}
+.notfound{
     opacity: 0;
     transform: scale(0);
 }
 
-.notfound{
-    opacity: 0;
-    transform: scale(0);
+.dontdisplay{
+    visibility: hidden;
+}
+
+::placeholder{
+    padding-left:0.2rem;
+    font-size: 1.2rem;
+}
+
+.margins{
+    margin-top: 3.5rem;
+}
+
+.setmargin{
+    margin-top: 1rem;
 }
