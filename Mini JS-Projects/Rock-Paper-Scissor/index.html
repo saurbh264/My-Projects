@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container h-[100vh]">
+            <div class="font-sans text-center font-semibold text-white text-4xl pt-6">Rock-Paper-Scissor</div>
+            <div class="main-content h-[90vh] flex justify-center items-center">
+                <div class="mainbox border-2 border-[#dadada]  h-[60vh] w-[40vw] text-[#7D2AE8] rounded-2xl">
+                    <div class="playarea h-[40%]  flex items-center justify-evenly">
+                        <div class="computer-image h-[70%] "><img src="images/rock.png" class="h-[100%] rotate-90 comp-img"></div>
+                        <div class="user-image h-[70%] "><img src="images/rock.png" class="h-[100%] user-img"></div>
+                    </div>
+                    <div class="result-text h-[10%] mb-3 text-center text-[1.5rem] ">Lets Play !!</div>
+                    <div class="playoptions h-[40%] flex justify-center items-center ">
+                        <div class="rock w-[33%] h-[100%] cards">
+                            <div class="rock-img h-[60%]"><img src="images/rock.png" class="h-[100%] option1" ></div>
+                            <div class="rock-text">Rock</div>
+                        </div>
+                        <div class="paper w-[33%] h-[100%] cards">
+                            <div class="paper-img h-[60%]"><img src="images/paper.png" class="h-[100%] option2" ></div>
+                            <div class="paper-text">Paper</div>
+                        </div>
+                        <div class="scissors w-[33%] h-[100%] cards">
+                            <div class="scissors-img h-[60%]"><img src="images/scissors.png" class="h-[100%] option3"></div>
+                            <div class="scissors-text">Scissors</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
