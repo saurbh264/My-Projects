@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.container{
+.wrapper{
     background: rgb(20,47,79);
-background: linear-gradient(140deg, rgba(20,47,79,1) 0%, rgba(41,79,130,1) 60%, rgba(51,95,156,1) 100%);
+    background: linear-gradient(140deg, rgba(20,47,79,1) 0%, rgba(41,79,130,1) 60%, rgba(51,95,156,1) 100%);
 }
 
 .cards{
