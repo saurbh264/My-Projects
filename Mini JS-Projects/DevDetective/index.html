@@ -17,18 +17,69 @@
 
 <body>
     <div class="wrapper h-[100vh]">
-        <div class="container h-[100%]">
-            <div class="heading h-[10%] flex justify-evenly bg-red-500 py-4 text-[1.5rem] poppins-semibold">
+        <div class="container h-[100%] light">
+            <div class="heading h-[10%] flex justify-evenly py-4 text-[1.5rem] poppins-semibold">
                 <div class="">Dev-Detective</div>
-                <div class="flex">
-                    <div>Dark</div>
-                    <div class=""><i class="ri-moon-fill"></i></div>
+                <div class="flex gap-2 opacity-0 scale-0 active">
+                    <div class="mode cursor-pointer">Dark</div>
+                    <div class="mode-icon cursor-pointer"><i class="ri-moon-fill"></i></div>
                 </div>
             </div>
-            <div class="searchbar h-[12%] "></div>
+            <div class="searchbar h-[12%] pt-2" >
+                <form class="form max-w-md mx-auto">
+                    <label for="default-search"
+                        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                        </div>
+                        <input type="search" id="default-search"
+                            class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Search Github User..." required />
+                        <button type="submit"
+                            class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                    </div>
+                </form>
+            </div>
 
-            <div class="main-content h-[75%] ">
-
+            <div class="main-content relative h-[75%] w-[80%] lg:w-[60%] mx-auto flex flex-col md:flex-row rounded-lg bg-white border-[1px] border-[#dadada]">
+                        <div class="left-div w-full h-[30%] md:w-[30%] md:h-full  flex justify-center pt-6 md:pt-10 rounded-l-lg content-div">
+                            <div class="h-[100px] w-[100px] md:w-[150px] md:h-[150px] rounded-full"><img src="assets/dp2.jpg" class="w-full h-full object-cover rounded-full avatar"></div>
+                        </div>
+                        <div class="right-div w-full h-[70%] md:w-[70%] md:h-full  rounded-r-lg flex flex-col md:gap-4 content-div">
+                            <div class="right-first">
+                            <div class="name-cont flex flex-col md:flex-row justify-around items-center pt-4 md:pt-10">
+                                <div class="name font-bold md:text-[1.5rem]">Avishkar Chavan</div>
+                                <div class="joined">Joined 6 Aug 2024 </div>
+                            </div>
+                            <div class="link text-center md:text-left md:pl-[2.5rem] text-blue-800 underline"><a href="https://www.github.com/Stormbreakerr20" class="repoid">@Stormbreakerr20</a></div>
+                            <div class="description pl-[1rem] md:pl-[2.5rem] pt- md:pt-[1rem]">Post Graduated || MCA || Full Stack Developer</div>
+                        </div>
+                        <div class="right-second bg-[#F6F8FF] flex justify-around items-center text-black py-2 md:py-4 w-[80%] mx-[1.5rem] md:mx-[2rem] mt-[0.5rem] md:mt-[1rem] rounded-lg content-div">
+                            <div>
+                                <div class="repo">Repos</div>
+                                <div class="repo-number font-bold text-[1.1rem] md:text-[1.25rem]">65</div>
+                            </div>
+                            <div>
+                                <div class="followers">Followers</div>
+                                <div class="followers-number font-bold text-[1.1rem] md:text-[1.25rem]">71</div>
+                            </div>
+                            <div>
+                                <div class="following">Following</div>
+                                <div class="following-number font-bold text-[1.1rem] md:text-[1.25rem]">10</div>
+                            </div>
+                        </div>
+                        <div class="third-div grid grid-cols-1 md:grid-cols-2 md:py-6 mt-2 content-div">
+                            <div class="px-10 py-1 md:py-2 flex gap-2 location"><i class="ri-map-pin-line "></i>Pune, Maharastra</div>
+                            <div class="px-10 py-1 md:py-2 flex gap-2 website"><i class="ri-links-line"></i><a href="">webdeviitmandi.ac.in</a></div>
+                            <div class="px-10 py-1 md:py-2 flex gap-2 twitter"><i class="ri-twitter-line"></i><a href="">thereal_avi</a></div>
+                            <div class="px-10 py-1 md:py-2 flex gap-2 company"><i class="ri-building-line"></i><a href="">IIT Mandi</a></div>
+                        </div>
+                    </div>
             </div>
         </div>
 
