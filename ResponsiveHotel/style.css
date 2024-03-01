@@ -1,0 +1,122 @@
+@font-face {
+    font-family: ggwoodland;
+    src: url(assets/PPWoodland-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: ggwoodland;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.page1{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.page1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    z-index: 7;
+    position: absolute;
+    top: 0%;
+}
+.buttons{
+    display: flex;
+    gap: 1.5rem;
+}
+.buttons button{    
+    gap: 1.5rem;
+    cursor: pointer;
+}
+.onc{
+    background-color: white;
+    border-radius: 2rem;
+    padding: 0.8rem;  
+}
+.menu{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.signup{
+    background-color: #5B6647;
+    color: white;
+    border-radius: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.page1 h1{
+    position: absolute;
+    z-index: 7;
+    font-size: 4rem;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #434B34;
+    font-weight: 400;
+}
+.page1 h2{
+    position: absolute;
+    z-index: 7;
+    font-size: 1.5rem;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #434B34;
+}
+
+.page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: #535D41;
+    line-height: 10vh;
+    padding: 2rem;
+    font-size: 5vh;
+    text-align: center;
+    color: #434B34;
+    font-weight: 800;
+}
+
+.page3{
+    height: 100vh;
+    width: 100vw;
+    background-color: #5B6647;
+}
+.page3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:600px) {
+    .nav{
+        padding: 0.8rem;
+    }
+    .page1 h1{
+        font-size: 2.1rem;
+        top: 15%;
+    }
+    .page1 h2{
+        font-size: 1.2rem;
+        top: 22%;
+    }
+    .page2{
+        font-size: 2.6vh;
+        line-height: 7.5vh;
+        font-weight: 800;
+    }
+}
